@@ -22,7 +22,7 @@ function getColorByName(name) {
 }
 
 function getColorForChongqing(name) {
-  const color = getColor(73);
+  const color = getColor(getCountByName("重庆市"));
   return color;
 }
 

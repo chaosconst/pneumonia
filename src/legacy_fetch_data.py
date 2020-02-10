@@ -85,7 +85,8 @@ def get_confirmed_count_dxy():
         province_name = p['provinceName']
         if province_name in ['香港', '澳门', '台湾']:
             continue
-        if province_name in ['北京市', '上海市', '天津市']:
+        if province_name in ['北京市', '上海市', '天津市', '重庆市']:
+            print("debug1",province_name, p['confirmed_count'])
             code = amap_city_to_code[province_name]
             confirmed_count[code] = p['confirmedCount']
             continue
@@ -111,7 +112,7 @@ def get_confirmed_count_tx():
             confirmed_count[code] += province['total']['confirm']
             suspected_count[code] += province['total']['suspect']
             continue
-        if province['name'] in ['北京', '上海', '天津']:
+        if province['name'] in ['北京', '上海', '天津','重庆']:
             province_name = province['name'] + '市'
             code = amap_city_to_code[province_name]
             confirmed_count[code] += province['total']['confirm']
