@@ -18,7 +18,7 @@ $ python src/pts_city_detail.py
 $ yarn install
 # 可以直接访问
 $ yarn webpack-dev-server
-#请访问：http://localhost:9000/pplt_ratio.html
+# 请访问：http://localhost:9000/pplt_ratio.html
 # 或者打包后使用静态文件服务器 host
 $ yarn webpack
 ```
