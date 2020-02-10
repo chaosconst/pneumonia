@@ -1,6 +1,6 @@
 # 中国新型冠状病毒肺炎疫情地级市图-每十万人发病数估计
 
-本程序是根据(https://lispczz.github.io/pneumonia/)这个工作进行的修改
+本程序是根据 lispczz (https://lispczz.github.io/pneumonia/) 这个工作进行的修改
 
 ## 使用说明
 
