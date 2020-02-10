@@ -168,11 +168,6 @@ def count_to_color(confirm, suspect):
 
 def write_result(result):
     writer = open('docs/confirmed_data.js', 'w', encoding='utf8')
-    writer.write('const LAST_UPDATE = "')
-    writer.write(datetime.datetime.now(datetime.timezone(
-        datetime.timedelta(hours=8))).strftime('%Y.%m.%d-%H:%M:%S'))
-    writer.write('";\n')
-    writer.write("const DATA = ")
     json.dump(result, writer, indent='  ', ensure_ascii=False)
     writer.close()
 
