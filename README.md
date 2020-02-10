@@ -9,7 +9,7 @@
 #获取疫情数据
 $ python3 src/legacy_fetch_data.py
 
-#获取每十万人确诊数据
+#计算每十万人确诊数据
 $ python src/pts_city_detail.py
 ```
 
