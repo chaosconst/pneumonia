@@ -231,13 +231,15 @@ document.addEventListener('DOMContentLoaded', function() {
     initVirusMap();
   });
   */
+    city_dict['邳州市'] = city_dict['徐州市'];
+    city_dict['莱芜市'] = city_dict['济南市'];
     console.log(city_dict);
+
     initVirusMap();
     //confirmedCount = getConfirmedCount(data);
     // fix some bugs of AMap
     //confirmedCount.set('邳州市', confirmedCount.get('徐州市'));
     //confirmedCount.set('莱芜市', confirmedCount.get('济南市'));
     //});
-
 
 });
