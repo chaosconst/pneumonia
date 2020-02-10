@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'production',
-  entry: './src/index.js',
+  entry: './src/pplt_ratio.js',
   devtool: 'inline-source-map',
   output: {
     filename: 'bundle.js',
