@@ -4,17 +4,25 @@
 
 ## 使用说明
 
-### 手动生成 
+### 更新数据
+```bash
+#获取疫情数据
+$ python3 src/legacy_fetch_data.py
 
+#获取每十万人确诊数据
+$ python src/pts_city_detail.py
+```
+
+### 生成网页 
 ```bash
 $ yarn install
 # 可以直接访问
 $ yarn webpack-dev-server
+#请访问：http://localhost:9000/pplt_ratio.html
 # 或者打包后使用静态文件服务器 host
 $ yarn webpack
 ```
 
-请访问：http://localhost:9000/pplt_ratio.html
 
 ## 注意事项
 * 直辖市不细分区县
