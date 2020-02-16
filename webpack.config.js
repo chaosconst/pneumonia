@@ -1,4 +1,5 @@
 const path = require('path');
+var webpack = require('webpack')
 
 module.exports = {
   mode: 'production',
@@ -27,6 +28,12 @@ module.exports = {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
-    ],
+      ],
   },
+  plugins: [
+      new webpack.ProvidePlugin({
+          $: "jquery",
+          jQuery: "jquery"
+          })
+  ],
 };

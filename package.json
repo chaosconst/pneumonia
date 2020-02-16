@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "axios-jsonp": "^1.0.4"
+    "axios-jsonp": "^1.0.4",
+    "jquery": "^3.4.1"
   }
 }

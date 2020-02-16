@@ -242,4 +242,19 @@ document.addEventListener('DOMContentLoaded', function() {
     //confirmedCount.set('莱芜市', confirmedCount.get('济南市'));
     //});
 
+    for (var x in city_dict) {
+        var p_name = city_dict[x][0]
+        var name = city_dict[x][1]
+        var count = city_dict[x][2]
+        var area = city_dict[x][3]
+        var pplt = city_dict[x][4]
+        var ratio_area = city_dict[x][5]
+        var ratio_pplt = city_dict[x][6]
+        var str = ""
+        for (var e in city_dict[x]) {
+            str = str + "<td>"+city_dict[x][e] +"</td>"
+        }
+        $(".remarkup-table>tbody").append("<tr>"+str+"</tr>\n")
+    }
+
 });

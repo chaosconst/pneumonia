@@ -38,16 +38,17 @@
             }
         }
     </style>
-    <title>新冠肺炎地级市疫情图</title>
+    <script src="./city_dict.js"></script>
+    <title>新冠肺炎疫情图（地级市每十万人确诊数）</title>
 </head>
 <body>
     <p style="text-align:center; width: 100%">
         <h1 style="text-align:center; width: 100%">
-            新冠肺炎地级市疫情图
+            新冠肺炎疫情图（地级市每十万人确诊数）
         </h1>
     </p>
     <div style="text-align:center;width: 100%">
-        <img src="legend.jpg" alt="" class="legend">
+        <img src="legend_pplt_ratio.png" alt="" class="legend">
     </div>
     <div style="text-align:center;width: 100%">
         <div id="main_div">
@@ -55,15 +56,17 @@
             </div>
             <p style="text-align:center; width: 100%">
                 <h1 style="text-align:center; width: 100%">
-                    腾讯新闻疫情网页:
+                    详细数据:
                 </h1>
             </p>
-            <div id='external_page' style="text-align:center; width:100%; height: 1080px; margin: 0;">
-                <iframe src="https://news.qq.com/zt2020/page/feiyan.htm" width="100%" height="1920"></iframe>
-            </div>
+            <div class="remarkup-table-wrap"><table class="remarkup-table" style="text-align:center; width: 100%">
+                    <tbody>
+                            <tr><td>省份</td><td>城市名</td><td>确诊人数</td><td>面积（平方公里）</td><td>常驻人口（万）</td><td>100 km^2 发病人数</td><td>十万人发病人数</td></tr>
+                                <tr></tr>
+                    </tbody></table></div>
+
         </div>
     </div>
-
     <script src="https://webapi.amap.com/maps?v=1.4.15&key=cddc8264cfa8793b396c890db09d96a0&plugin=Map3D,AMap.DistrictLayer,AMap.Scale,AMap.ToolBar"></script>
     <script src="./bundle.js"></script>
 </body>
