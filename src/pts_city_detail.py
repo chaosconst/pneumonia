@@ -46,13 +46,13 @@ print(len(cities))
 print("population", len(population_dict))
 print("patients", len(patients))
 
-#pprint(cities)
 city_dict={}
 for city in cities:
     city_dict[city[1]] = city
 
 with open("docs/city_dict.js", "w+") as f:
-    f.write("city_dict = "+json.dumps(city_dict))
+    f.write("city_dict = "+json.dumps(city_dict)+"\n")
+    f.write("city_list = "+json.dumps(cities))
 
 
 for city in cities:
